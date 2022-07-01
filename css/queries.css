@@ -1,0 +1,65 @@
+@media only screen and (max-width: 1007px){
+    .active {
+        border: none;
+    }
+
+    ul {
+        position: fixed;
+        bottom: ;
+        left: ;
+        right: ;
+        top: ;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    .mobile_nav_background {
+        background-color: #fff;
+        display: none;
+        height: 200px;
+        width: 100%;
+    }
+
+    .mobile_nav_icon {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .social_media {
+        display: none;
+    }
+    
+    .left_side {
+        padding: 0;
+        width: 100%;
+    }
+
+    .right_side {
+        padding: 0;
+        width: 100%;
+    }
+    
+    .text {
+        width: 100%
+    }
+
+    .split_screen {
+        padding: 0;
+        width: 100%;
+    }
+    
+    .contact_form {
+        padding: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    
+}
