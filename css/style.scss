@@ -6,13 +6,18 @@
 
 $tablet: 768px;
 $desktop: 1024px;
+$black: #000;
+$white: #fff;
+$gray80: #ccc;
+$gray98: #fafafa;
 
 /* Base */ 
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: 16px;
 }
 
 body {
@@ -29,7 +34,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: $black;
 }
 
 h1 {
@@ -91,7 +96,7 @@ li {
     }
 }
 
-.gallery__grid {
+.gallery {
     display: grid;
     grid-template-columns: repeat(1, auto);
     grid-gap: 2rem;
@@ -99,7 +104,7 @@ li {
     padding-bottom: 2rem;
 }
 
-.clay-ceramics .gallery__grid, .studio-vega .gallery__grid {
+.clay-ceramics .gallery, .studio-vega .gallery {
 
     @media only screen and (min-width: $tablet) {
         grid-template-columns: repeat(2, 1fr);
@@ -178,7 +183,7 @@ img {
     }
 }
 
-.menu__item, .menu__item .icon {
+.menu__item, .icon {
     display: none;
     width: 100%;
     text-align: center;
@@ -194,7 +199,7 @@ img {
     font-family: 'Quattrocento', serif;
 }
 
-.icon:first-of-type {
+.instagram {
     margin-left: 1rem;
 }
 
@@ -208,7 +213,7 @@ img {
 
 /* Work */
 
-.portfolio-grid {
+.portfolio {
     display: grid;
     grid-template-columns: 1, 1fr;
     grid-gap: 4rem;
@@ -220,7 +225,7 @@ img {
     }
 }
 
-.portfolio-grid__item {
+.portfolio__item {
     font-size: 1.3rem;
     font-weight: 400;
 }
@@ -255,7 +260,7 @@ img {
     padding-bottom: 2rem;
 }
 
-.form__grid {
+.form {
     padding-top: 2rem;
     padding-bottom: 2rem;
     font-family: 'Quattrocento', serif;
@@ -272,15 +277,15 @@ img {
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 1rem;
-    background-color: #fafafa;
-    border: 1.5px solid #ccc;
+    background-color: $gray98;
+    border: 1.5px solid $gray80;
     border-radius: 4px;
     resize: vertical;
 }
 
 .form__field input:focus,
 .form__field textarea:focus {
-    background-color: #fff;
+    background-color: $white;
     outline: none;
 }
 
@@ -288,15 +293,15 @@ img {
     padding: 20px 35px;
     font-family: "Fanwood Text", serif;
     font-size: 1.3rem;
-    background-color: #fff;
+    background-color: $white;
     border-radius: 4px;
     border: 1.5px solid;
     cursor: pointer;
 }
 
 .button:hover {
-    color: #fff;
-    background-color: #000;
+    color: $white;
+    background-color: $black;
 }
 
 .contact .row {

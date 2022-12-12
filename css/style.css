@@ -3,9 +3,10 @@
 /* Variables CSS */
 /* Base */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: 16px;
 }
 
 body {
@@ -79,7 +80,7 @@ li {
   }
 }
 
-.gallery__grid {
+.gallery {
   display: grid;
   grid-template-columns: repeat(1, auto);
   grid-gap: 2rem;
@@ -88,7 +89,7 @@ li {
 }
 
 @media only screen and (min-width: 768px) {
-  .clay-ceramics .gallery__grid, .studio-vega .gallery__grid {
+  .clay-ceramics .gallery, .studio-vega .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -169,13 +170,13 @@ img {
   }
 }
 
-.menu__item, .menu__item .icon {
+.menu__item, .icon {
   display: none;
   width: 100%;
   text-align: center;
 }
 @media only screen and (min-width: 768px) {
-  .menu__item, .menu__item .icon {
+  .menu__item, .icon {
     display: block;
     width: auto;
   }
@@ -186,7 +187,7 @@ img {
   font-family: "Quattrocento", serif;
 }
 
-.icon:first-of-type {
+.instagram {
   margin-left: 1rem;
 }
 
@@ -199,7 +200,7 @@ img {
 }
 
 /* Work */
-.portfolio-grid {
+.portfolio {
   display: grid;
   grid-template-columns: 1, 1fr;
   grid-gap: 4rem;
@@ -207,12 +208,12 @@ img {
   padding-bottom: 2rem;
 }
 @media only screen and (min-width: 768px) {
-  .portfolio-grid {
+  .portfolio {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.portfolio-grid__item {
+.portfolio__item {
   font-size: 1.3rem;
   font-weight: 400;
 }
@@ -243,13 +244,13 @@ img {
   padding-bottom: 2rem;
 }
 
-.form__grid {
+.form {
   padding-top: 2rem;
   padding-bottom: 2rem;
   font-family: "Quattrocento", serif;
 }
 @media only screen and (min-width: 1024px) {
-  .form__grid {
+  .form {
     width: 50%;
   }
 }

@@ -1,16 +1,8 @@
-const menu = document.querySelector(".menu");
-const toggle = document.querySelector(".menu__toggle");
+window.addEventListener("load", () => {
+    const menu = document.querySelector(".menu");
+    const toggle = document.querySelector(".uil .uil-bars");
 
-function toggleMenu() {
-    if (menu.classList.contains("active")) {
-        menu.classList.remove("active");
-
-        toggle.querySelector("a").innerHTML = "<i class=’uil uil-bars’></i>";
-    } else {
-        menu.classList.add("active");
-    
-        toggle.querySelector("a").innerHTML = "<i class=’uil uil-bars’></i>";
-    }
-}
-
-toggle.addEventListener("click", toggleMenu, false);
+    toggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+});
