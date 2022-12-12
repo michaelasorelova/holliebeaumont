@@ -203,8 +203,10 @@ img {
     margin-left: 1rem;
 }
 
-.menu .active {
-    display: flex;
+.menu.active {
+    .menu__item {
+        display: flex;
+    }
 }
 
 /* Work */
