@@ -195,7 +195,7 @@ img {
   font-size: 1.3rem;
 }
 
-.active {
+.menu .active {
   display: block;
 }
 
