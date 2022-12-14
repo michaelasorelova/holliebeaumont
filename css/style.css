@@ -149,50 +149,67 @@ img {
   padding-bottom: 2rem;
 }
 
-.menu {
+.nav {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 100%;
+  position: relative;
+  justify-content: space-between;
 }
 
-.menu__logo {
-  flex: 1;
+.nav__logo {
   font-size: 1.7rem;
+  z-index: 1;
 }
 
-.menu__toggle {
+.nav__toggle {
   font-size: 1.7rem;
+  z-index: 1;
 }
 @media only screen and (min-width: 768px) {
-  .menu__toggle {
+  .nav__toggle {
     display: none;
   }
 }
 
-.menu__item, .icon {
+.menu {
   display: none;
-  width: 100%;
-  text-align: center;
 }
 @media only screen and (min-width: 768px) {
-  .menu__item, .icon {
-    display: block;
-    width: auto;
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .menu .menu__item {
+    margin-left: 0.5rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .menu .instagram {
+    margin-left: 1rem;
   }
 }
 
-.menu__item {
-  margin-left: 0.5rem;
-  font-family: "Quattrocento", serif;
-}
-
-.instagram {
-  margin-left: 1rem;
-}
-
-.menu .active {
+.menu.active {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  padding-top: 3.7rem;
+  padding-bottom: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+.menu.active .menu__item {
+  margin-bottom: 0.5rem;
+}
+.menu.active .contact {
+  margin-bottom: 1rem;
+}
+.menu.active .twitter {
+  margin: 0;
 }
 
 /* Work */

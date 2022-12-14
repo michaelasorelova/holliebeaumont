@@ -3,6 +3,6 @@ window.addEventListener("load", () => {
     const toggle = document.querySelector(".hamburger");
 
     toggle.addEventListener("click", () => {
-        menu.classList.toggle('active');
+        menu.classList.toggle("active");
     });
 });
