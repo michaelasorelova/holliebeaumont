@@ -182,15 +182,15 @@ img {
 
     @media only screen and (min-width: $tablet) {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
+        flex-direction: row;
         align-items: center;
     }
 
     .list__item {
-        font-size: 1.3rem;
-
         @media only screen and (min-width: $tablet) {
-            margin-left: 0.5rem;
+            margin-left: 0.3rem;
+            font-size: 1.3rem;
         }
     }
 
@@ -206,7 +206,7 @@ img {
 
     .twitter {
         @media only screen and (min-width: $tablet) {
-            margin-right: 0.5rem;
+            margin-left: 0.3rem;
         }
     }
 }
@@ -243,7 +243,7 @@ img {
     }
 
     .twitter {
-        margin-left: 0.5rem;
+        margin-left: 0.3rem;
     }
 }
 

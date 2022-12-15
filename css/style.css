@@ -170,16 +170,15 @@ img {
 @media only screen and (min-width: 768px) {
   .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    flex-direction: row;
     align-items: center;
   }
 }
-.nav .list__item {
-  font-size: 1.3rem;
-}
 @media only screen and (min-width: 768px) {
   .nav .list__item {
-    margin-left: 0.5rem;
+    margin-left: 0.3rem;
+    font-size: 1.3rem;
   }
 }
 .nav .action__item i {
@@ -192,7 +191,7 @@ img {
 }
 @media only screen and (min-width: 768px) {
   .nav .twitter {
-    margin-right: 0.5rem;
+    margin-left: 0.3rem;
   }
 }
 
@@ -225,7 +224,7 @@ img {
   justify-content: center;
 }
 .nav.active .twitter {
-  margin-left: 0.5rem;
+  margin-left: 0.3rem;
 }
 
 /* Work */
