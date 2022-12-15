@@ -187,14 +187,26 @@ img {
     }
 
     .list__item {
+        font-size: 1.3rem;
+
         @media only screen and (min-width: $tablet) {
             margin-left: 0.5rem;
         }
     }
 
+    .action__item i {
+        font-size: 1.3rem;
+    }
+
     .instagram {
         @media only screen and (min-width: $tablet) {
             margin-left: 1rem;
+        }
+    }
+
+    .twitter {
+        @media only screen and (min-width: $tablet) {
+            margin-right: 0.5rem;
         }
     }
 }

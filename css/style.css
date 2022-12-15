@@ -174,14 +174,25 @@ img {
     align-items: center;
   }
 }
+.nav .list__item {
+  font-size: 1.3rem;
+}
 @media only screen and (min-width: 768px) {
   .nav .list__item {
     margin-left: 0.5rem;
   }
 }
+.nav .action__item i {
+  font-size: 1.3rem;
+}
 @media only screen and (min-width: 768px) {
   .nav .instagram {
     margin-left: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .nav .twitter {
+    margin-right: 0.5rem;
   }
 }
 
