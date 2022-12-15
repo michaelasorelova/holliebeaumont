@@ -6,7 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 16px;
+  font-size: 16px;
 }
 
 body {
@@ -148,7 +148,7 @@ img {
   padding-bottom: 2rem;
 }
 
-.header__logo {
+.header__title {
   font-size: 1.7rem;
   z-index: 1;
 }
