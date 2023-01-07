@@ -10,33 +10,44 @@
     <script src="/js/script.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <a class="header__title" href="/">Hollie Beaumont</a>
-            <i class="header__toggle hamburger uil uil-bars"></i>    
-            <nav class="nav">
-                <div class="nav__list">
-                    <a class="list__item work" href="/">Work</a>
-                    <a class="list__item about" href="/about/">About</a>
-                    <a class="list__item contact" href="/contact/">Contact</a>
-                </div>    
-                <div class="nav__action">
-                    <a class="action__item instagram" href="https://www.instagram.com/" target="_blank"><i class="uil uil-instagram"></i></a>
-                    <a class="action__item twitter" href="https://www.twitter.com/" target="_blank"><i class="uil uil-twitter"></i></a>
-                </div>
-            </nav>
-        </header>
-        <main class="main">
+    <header class="header">     
+        <nav class="nav">
+            <a class="nav__title" href="/">Hollie Beaumont</a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="/">Work</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="/about/">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="/contact/">Contact</a>
+                    </li>
+                </ul>    
+                <ul class="social-nav__list">
+                    <li class="social-nav__item">
+                        <a class="social-nav__link" href="https://www.instagram.com/" target="_blank"><i class="uil uil-instagram intagram"></i></a>
+                    </li>
+                    <li class="social-nav__item">
+                        <a class="social-nav__link" href="https://www.twitter.com/" target="_blank"><i class="uil uil-twitter twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <i class="uil uil-bars nav__toggle"></i>
+        </nav>
+    </header>
+    <main class="main">
 
-            {{ content | safe }}
+        {{ content | safe }}
 
-        </main>
-        <footer class="footer">
-            <p>
-                email@example.com<br>
-                (555) 555-5555
-            </p>
-        </footer>
-    </div>
+    </main>
+    <footer class="footer">
+        <p>
+            email@example.com
+            <br>
+            (555) 555-5555
+        </p>
+    </footer>
 </body>
 </html>

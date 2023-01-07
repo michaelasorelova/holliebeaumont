@@ -1,0 +1,466 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Quattrocento&display=swap');
+
+/* Variables CSS */
+
+$tablet: 768px;
+$desktop: 1024px;
+$black: #000;
+$white: #fff;
+$gray80: #ccc;
+$gray98: #fafafa;
+
+/* Base */ 
+
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Fanwood Text', serif;
+    font-size: 1.1rem;
+
+    @media only screen and (min-width: $tablet) {
+        font-size: 1.3rem;
+    } 
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+h1 {
+    font-size: 1.7rem;
+    font-weight: 400;
+
+    @media only screen and (min-width: $tablet) {
+        font-size: 2.1rem;
+    }
+}
+
+h2 {
+    margin-bottom: 2rem;
+    font-size: 2.1rem;
+    font-weight: 400;
+
+    @media only screen and (min-width: $tablet) {
+        font-size: 2.3rem;
+    }
+}
+
+h3 {
+    font-size: 1.7rem;
+    font-weight: 400;
+
+    @media only screen and (min-width: $tablet) {
+        font-size: 2.1rem;
+    }
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 400;
+
+    @media only screen and (min-width: $tablet) {
+        font-size: 1.3rem;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+li {
+    list-style: none;
+}
+
+/* Reusable */
+
+.content-wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+    
+    .content {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        .gallery {
+            display: grid;
+            gap: 2rem;
+
+            .gallery__item {
+
+                img {
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
+        }
+
+        .grid {
+            display: grid;
+            gap: 2rem;
+
+            @media only screen and (min-width: $tablet) {
+                grid-template-columns: 1fr 1fr;
+            } 
+        }
+
+        .pagination {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 2rem;
+            
+            .pagination__item {
+                font-size: 1.7rem;
+                font-weight: 400;
+
+                @media only screen and (min-width: $tablet) {
+                    font-size: 2.1rem;
+                }
+            }
+        
+            @media only screen and (min-width: $tablet) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .half {
+
+        @media only screen and (min-width: $tablet) {
+            width: 50%;
+        } 
+    }
+}
+
+/* Header */
+
+.header {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .nav__title {
+            z-index: 2;
+            font-size: 1.7rem;
+
+            @media only screen and (min-width: $tablet) {
+                font-size: 2.1rem;
+            }
+        }
+
+        .nav__menu {
+            display: none;
+
+            .nav__list {
+
+                .nav__item {
+                    font-family: 'Quattrocento', serif;
+                }
+
+                @media only screen and (min-width: $desktop) {
+                    display: flex;
+                    flex-direction: row;
+                    gap: .5rem;
+                }
+            }
+
+            .social-nav__list {
+
+                @media only screen and (min-width: $desktop) {
+                    display: flex;
+                    flex-direction: row;
+                    gap: .5rem;
+                }
+            }
+
+            @media only screen and (min-width: $desktop) {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                gap: 1rem;
+            }
+
+            &.active {
+                z-index: 1;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 2rem;
+                justify-content: center;
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                height: 100vh;
+                width: 100%;
+                text-align: center;
+                background-color: $white;
+            
+                .nav__list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+
+                    .nav__item {
+
+                        .nav__link {
+                            font-size: 2.3rem;
+                        }
+                    }
+                }
+            
+                .social-nav__list {
+                    display: flex;
+                    flex-direction: row;
+                    gap: .5rem;
+
+                    .social-nav__item {
+
+                        .social-nav__link {
+                            font-size: 1.7rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .nav__toggle {
+            z-index: 2;
+            font-size: 1.7rem;
+        
+            @media only screen and (min-width: $desktop) {
+                display: none;
+            }
+        }
+    }
+}
+
+/* Work */
+
+.work .content-wrapper {
+
+    .content {
+
+        .grid {
+
+            .grid__item {
+
+                p {
+                    font-family: 'Quattrocento', serif;
+                }
+            }
+        }
+
+        .portfolio {
+            display: grid;
+            gap: 2rem;
+
+            .portfolio__item {
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+
+                img {
+                    object-fit: cover;
+                    height: 100%;
+                    margin-bottom: .5rem;
+                }
+
+                &:hover img {
+                    opacity: .5;
+                }
+            }
+
+            @media only screen and (min-width: $tablet) {
+                grid-template-columns: 1fr 1fr;
+            }   
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+        }
+
+        a {
+            font-size: 1.7rem;
+            text-decoration: underline;
+
+            @media only screen and (min-width: $tablet) {
+                font-size: 2.1rem;
+            }
+        }
+    }
+}
+
+/* About */
+
+.about .content-wrapper {
+
+    .content {
+
+        h3 {
+            margin-bottom: 2rem;
+        }
+
+        .grid {
+
+            .grid__item {
+                font-family: 'Quattrocento', serif;
+            }
+        }
+    }
+}
+
+/* Contact */
+
+.contact .content-wrapper {
+    
+    .content {
+
+        .form {
+            font-family: 'Quattrocento', serif;
+
+            .form__field {
+            
+                label {
+                    display: inline-block;
+                    margin-bottom: .5rem;
+                }
+
+                input,
+                textarea {
+                    width: 100%;
+                    resize: vertical;
+                    margin-bottom: 1rem;
+                    padding: 1rem;
+                    background-color: $gray98;
+                    border: 1.5px solid $gray80;
+                    border-radius: 4px;
+
+                    &:focus {
+                        background-color: $white;
+                        outline: none;
+                    }
+                }
+            }
+
+            .button {
+                padding: 20px 35px;
+                font-family: "Fanwood Text", serif;
+                font-size: .7rem;
+                background-color: $white;
+                border: 1.5px solid;
+                border-radius: 4px;
+                cursor: pointer;
+
+                @media only screen and (min-width: $tablet) {
+                    font-size: 1.1rem;
+                }
+
+                &:hover {
+                    color: $white;
+                    background-color: $black;
+                }
+            }
+        
+            @media only screen and (min-width: $tablet) {
+                width: 50%;
+            }
+        }
+
+        .grid {
+
+            .grid__item {
+
+                a {
+                    text-decoration: underline;
+                }
+
+                h3 {
+                    margin-bottom: 2rem;
+                }
+
+                p {
+                    font-family: 'Quattrocento', serif;
+                }
+            }
+        }
+    }
+}
+
+/* Clay Ceramics */
+
+.clay-ceramics .content-wrapper {
+
+    .content {
+
+        .gallery {
+
+            @media only screen and (min-width: $tablet) {
+                grid-template-columns: 1fr 1fr;
+            } 
+        }
+
+        .pagination {
+
+            @media only screen and (min-width: $tablet) {
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+        }
+    }
+}
+
+/* Studio Vega */
+
+.studio-vega .content-wrapper {
+
+    .content {
+
+        .gallery {
+            
+            @media only screen and (min-width: $tablet) {
+                grid-template-columns: 1fr 1fr;
+            } 
+        }
+    }
+}
+
+/* Footer */
+
+.footer {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Quattrocento', serif;
+}
