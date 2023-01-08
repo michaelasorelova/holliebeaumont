@@ -24,11 +24,6 @@ body {
   font-family: "Fanwood Text", serif;
   font-size: 1.1rem;
 }
-@media only screen and (min-width: 768px) {
-  body {
-    font-size: 1.3rem;
-  }
-}
 body.no-scroll {
   overflow: hidden;
 }
@@ -42,41 +37,21 @@ h1 {
   font-size: 1.7rem;
   font-weight: 400;
 }
-@media only screen and (min-width: 768px) {
-  h1 {
-    font-size: 2.1rem;
-  }
-}
 
 h2 {
   margin-bottom: 2rem;
   font-size: 2.1rem;
   font-weight: 400;
 }
-@media only screen and (min-width: 768px) {
-  h2 {
-    font-size: 2.3rem;
-  }
-}
 
 h3 {
   font-size: 1.7rem;
   font-weight: 400;
 }
-@media only screen and (min-width: 768px) {
-  h3 {
-    font-size: 2.1rem;
-  }
-}
 
 h4 {
   font-size: 1.1rem;
   font-weight: 400;
-}
-@media only screen and (min-width: 768px) {
-  h4 {
-    font-size: 1.3rem;
-  }
 }
 
 img {
