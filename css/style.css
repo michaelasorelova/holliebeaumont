@@ -22,7 +22,7 @@ html {
 body {
   line-height: 1.5;
   font-family: "Fanwood Text", serif;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 body.no-scroll {
   overflow: hidden;
@@ -34,23 +34,23 @@ a {
 }
 
 h1 {
-  font-size: 1.7rem;
+  font-size: 2.1rem;
   font-weight: 400;
 }
 
 h2 {
   margin-bottom: 2rem;
-  font-size: 2.1rem;
+  font-size: 2.3rem;
   font-weight: 400;
 }
 
 h3 {
-  font-size: 1.7rem;
+  font-size: 2.1rem;
   font-weight: 400;
 }
 
 h4 {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 
@@ -135,12 +135,7 @@ li {
 }
 .header .nav .nav__title {
   z-index: 2;
-  font-size: 1.7rem;
-}
-@media only screen and (min-width: 768px) {
-  .header .nav .nav__title {
-    font-size: 2.1rem;
-  }
+  font-size: 2.1rem;
 }
 .header .nav .nav__menu {
   display: none;
@@ -243,13 +238,8 @@ li {
   margin-bottom: 2rem;
 }
 .work .content-wrapper .content a {
-  font-size: 1.7rem;
+  font-size: 2.1rem;
   text-decoration: underline;
-}
-@media only screen and (min-width: 768px) {
-  .work .content-wrapper .content a {
-    font-size: 2.1rem;
-  }
 }
 
 /* About */
@@ -286,16 +276,11 @@ li {
 .contact .content-wrapper .content .form .button {
   padding: 20px 35px;
   font-family: "Fanwood Text", serif;
-  font-size: 0.7rem;
+  font-size: 1.1rem;
   background-color: #fff;
   border: 1.5px solid;
   border-radius: 4px;
   cursor: pointer;
-}
-@media only screen and (min-width: 768px) {
-  .contact .content-wrapper .content .form .button {
-    font-size: 1.1rem;
-  }
 }
 .contact .content-wrapper .content .form .button:hover {
   color: #fff;
